@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
     scroll-behavior: smooth;
     font-family: "Noto Sans", sans-serif;
 }
@@ -52,6 +51,7 @@ Body {
     padding: 20px 0;
     justify-content: space-between;
     gap: 48px;
+    list-style: none;
 }
 
 figure img {
@@ -202,6 +202,55 @@ figure img {
 }
 
 
+/* __________Plants lover Section__________ */
+.plants_lover_section {
+    justify-content: space-between;
+    position: relative;
+}
+
+.plants_lover_img {
+    position: relative;
+}
+
+.plants_lover_img img {
+    width: 100%;
+}
+
+.plants_lover_img .badge {
+    max-width: 286px;
+    position: absolute;
+    top: -128px;
+    right: -100px;
+}
+
+.plants_lover_text {
+    max-width: 540px;
+}
+
+.plants_lover_text h2 {
+    color: var(--dark-color);
+    font-size: var(--h2-font);
+    font-weight: 700;
+    line-height: 68px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: 2px solid transparent;
+}
+
+.plants_lover_text ul {
+    color: var(--descrip-color);
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 27px;
+    padding-left: 50px;
+    text-align: start;
+}
+
+.plants_lover_text ul li {
+    margin-bottom: 25px;
+}
+
+
 
 
 
@@ -278,6 +327,27 @@ figure img {
 
     .section_title p {
         font-size: 1rem;
+    }
+
+    /* plants_lover_section */
+    .plants_lover_section {
+        flex-direction: column;
+        margin: 120px 15px 70px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .plants_lover_text h2 {
+        font-size: 1.8rem;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+
+    .plants_lover_text ul {
+        font-size: 1rem;
+        padding-left: 35px;
     }
 
 }
