@@ -1,0 +1,36 @@
+/* Noto Serif & Inter Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+Body {
+
+}
+
+/* CSS Variables */
+:root {
+    --dark-color: #000000;
+    --link-color: #8987A1;
+    --descrip-color: rgba(0, 0, 0, 0.5);
+    --main-color: #E95A08;
+
+    --h1-font: 4.0625rem;
+    --h2-font: 3.125rem;
+    --p-font: 1.375rem;
+}
+
+/* Repeated Styles Start */
+
+
+
+/* End Repeated Styles */
+
+
