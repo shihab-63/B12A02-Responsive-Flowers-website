@@ -54,6 +54,7 @@ Body {
 }
 
 figure img {
+  cursor: pointer;
   width: 100%;
 }
 
@@ -148,7 +149,7 @@ figure img {
 
 .card {
   max-width: 270px;
-  border-radius: 10px;
+  border-radius: 14px;
   text-align: center;
   cursor: pointer;
   transition: all 0.35s ease;
@@ -193,7 +194,7 @@ figure img {
 }
 
 .card .btn:hover {
-  border-radius: 10px;
+  border-radius: 0 0 14px 14px;
 }
 
 /* __________Plants lover Section__________ */
@@ -207,6 +208,7 @@ figure img {
 }
 
 .plants_lover_img img {
+  cursor: pointer;
   width: 100%;
 }
 
@@ -215,7 +217,20 @@ figure img {
   position: absolute;
   top: -128px;
   right: -100px;
+  animation: spin 15s linear infinite;
 }
+
+/* __________Badge Animation__________ */
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .plants_lover_text {
   max-width: 540px;
@@ -245,7 +260,7 @@ figure img {
 }
 
 /* __________Latest Deal Section_________ */
-.latest_deal_section {
+.latest_deals_container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
@@ -257,7 +272,6 @@ figure img {
 }
 
 .box {
-  position: relative;
   color: white;
   border-radius: 12px;
   padding: 20px;
@@ -271,33 +285,33 @@ figure img {
 }
 
 .box h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 27px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 27px;
 }
 
 .box a {
-    display: inline-block;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 19px;
-    margin-top: 8px;
-    border-bottom: 2px solid white;
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 8px;
+  border-bottom: 2px solid white;
 }
 
 .box h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 67px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 67px;
 }
 
-.box3  a {
-    display: inline-block;
-    font-size: 1.75rem;
-    font-weight: 500;
-    line-height: 37px;
-    border-bottom: 2px solid white;
+.box3 a {
+  display: inline-block;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 37px;
+  border-bottom: 2px solid white;
 }
 
 .box1 {
@@ -346,6 +360,7 @@ figure img {
   width: 100%;
   padding: 16px 30px;
   outline: none;
+  border: none;
 }
 
 .join_form .btnn {
@@ -354,68 +369,64 @@ figure img {
   padding: 16px 60px;
   border: none;
   font-size: 14px;
+  cursor: pointer;
   font-weight: 600;
 }
 
-
-
 /* _________Footer Section_________ */
 .footer_section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: -80px auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: -80px auto 50px;
 }
 
 .footer_text {
-    max-width: 360px;
+  max-width: 360px;
 }
 
 .footer_text p {
-    color: var(--descrip-color);
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 25px;
-    margin-top: 10px;
+  color: var(--descrip-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 10px;
 }
 
 .footer_links {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
 }
 
 .footer_links a {
-    display: inline-block;
-    color: var(--descrip-color);
-    transition: all .5s;
+  display: inline-block;
+  color: var(--descrip-color);
+  transition: all 0.5s;
 }
 
 .footer_links a:hover {
-    text-decoration: underline;
-    color: var(--dark-color);
+  text-decoration: underline;
+  color: var(--dark-color);
 }
 
 .footer_icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .footer_icons img {
-    width: 100%;
-    transition: all .35s ease;
-    cursor: pointer;
+  width: 100%;
+  transition: all 0.35s ease;
+  cursor: pointer;
 }
 
 .footer_icons img:hover {
-    transform: scale(1.05) translateY(-5px);
+  transform: scale(1.05) translateY(-5px);
 }
-
-
-
 
 /* __________Responsive Mobile Design__________ */
 @media screen and (max-width: 576px) {
@@ -519,7 +530,7 @@ figure img {
   }
 
   .join_form .btnn {
-    padding: 13px 20px;
+    padding: 12px 20px;
   }
 
   .join_form input {
@@ -527,9 +538,9 @@ figure img {
   }
 
   /* __________Latest Deal Section_________ */
-  .latest_deal_section {
+  .latest_deals_container {
     grid-template-columns: 1fr;
-    margin: 80px 15px 70px;
+    margin: 80px 15px -40px;
   }
 
   .box h3 {
@@ -541,9 +552,13 @@ figure img {
     line-height: 27px;
   }
 
-  .box3  a {
+  .box3 a {
     font-size: 1rem;
     line-height: 19px;
+  }
+
+  .latest_dealss {
+    margin: -80px 15px -30px;
   }
 
   /* __________Footer Section__________ */
@@ -552,9 +567,8 @@ figure img {
     margin: 50px 15px;
   }
 
-  .footer_text, .footer_links  {
+  .footer_text,
+  .footer_links {
     margin-bottom: 25px;
   }
-
-
 }

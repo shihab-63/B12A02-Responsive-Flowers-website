@@ -15,7 +15,7 @@
 <body>
 
     <!------------ Header Area! ------------>
-    <header class="container">
+    <header class="container" id="home">
         <!-- Navigation Bar -->
         <nav class="navbar flex">
             <figure>
@@ -23,9 +23,9 @@
             </figure>
 
             <ul class="navbar flex">
-                <li><a href="#" class="active item">Home</a></li>
-                <li><a href="#" class="item">Shop</a></li>
-                <li><a href="#" class="item">About us</a></li>
+                <li><a href="#home" class="active item">Home</a></li>
+                <li><a href="#plants" class="item">Shop</a></li>
+                <li><a href="#about" class="item">About us</a></li>
 
                 <div class="nav_icon">
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -53,7 +53,7 @@
     <!------------Main Area!------------>
     <main>
         <!------------ Plants Section ------------>
-        <section class="plants_section container section_gap">
+        <section class="plants_section container section_gap" id="plants">
             <!-- Section_title -->
             <div class="section_title">
                 <h2><span>Our</span> Plants</h2>
@@ -147,24 +147,31 @@
 
         <!------------Latest Deal Section------------>
         <section class="latest_deal_section container section_gap">
+            <!-- Section Title -->
+            <section class="section_title latest_dealss">
+                <h2><span>Latest</span> Deals</h2>
+                <p>Discover a beautiful array of fresh flowers at our shop. From classic roses to exotic
+                    blooms,<br>weoffer an exquisite selection to delight your senses</p>
+            </section>
+            <!-- Latest_deals_Grid -->
+            <div class="latest_deals_container">
+                <div class="deal_left">
+                    <div class="box box1">
+                        <h3>60% Off | Bloom Plant</h3>
+                        <a href="#plants">Shop Now</a>
+                    </div>
 
-            <div class="deal_left">
-                <div class="box box1">
-                    <h3>60% Off | Bloom Plant</h3>
-                    <a href="#">Shop Now</a>
+                    <div class="box box2">
+                        <h3>30% Off | Ana Plant</h3>
+                        <a href="#plants">Shop Now</a>
+                    </div>
                 </div>
 
-                <div class="box box2">
-                    <h3>30% Off | Ana Plant</h3>
-                    <a href="#">Shop Now</a>
+                <div class="deal_right box box3">
+                    <h2>25% Off | Zabo Plant</h2>
+                    <a href="#plants">Shop Now</a>
                 </div>
             </div>
-
-            <div class="deal_right box box3">
-                <h2>25% Off | Zabo Plant</h2>
-                <a href="#">Shop Now</a>
-            </div>
-
         </section>
 
         <!------------Join Section------------>
@@ -172,7 +179,7 @@
             <div class="section_content container">
                 <h2>Join the colorful Bunch</h2>
                 <div class="join_form">
-                    <input type="email" placeholder="Write email">
+                    <input type="email" placeholder="Write email" required>
                     <button class="btnn">Subscribe</button>
                 </div>
             </div>
@@ -180,7 +187,7 @@
     </main>
 
     <!------------Footer Area!------------>
-    <footer class="container footer_section">
+    <footer class="container footer_section" id="about">
 
         <div class="footer_text">
             <img src="./assets/logo.png" alt="Logo">
@@ -188,8 +195,8 @@
         </div>
 
         <ul class="footer_links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Contact Us</a></li>
@@ -205,10 +212,10 @@
 
 
         <div class="footer_icons">
-            <img src="./assets/icon-linkedin.png" alt="">
-            <img src="./assets/icon-twitter.png" alt="">
-            <img src="./assets/icon-facebook.png" alt="">
-            <img src="./assets/icon-youtube.png" alt="">
+            <img src="./assets/icon-linkedin.png" alt="linkedin image">
+            <img src="./assets/icon-twitter.png" alt="twitter image">
+            <img src="./assets/icon-facebook.png" alt="facebook image">
+            <img src="./assets/icon-youtube.png" alt="youtube image">
         </div>
 
 
