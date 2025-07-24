@@ -205,7 +205,7 @@ figure img {
 /* __________Plants lover Section__________ */
 .plants_lover_section {
     justify-content: space-between;
-    position: relative;
+    margin-top: 200px;
 }
 
 .plants_lover_img {
@@ -250,7 +250,54 @@ figure img {
     margin-bottom: 25px;
 }
 
+/* __________Latest Deal Section_________ */
 
+
+
+
+
+
+/* __________Join Section__________ */
+.join_section {
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section_content {
+    text-align: center;
+    padding: 190px;
+}
+
+.section_content h2 {
+    color: #fff;
+    font-size: var(--h2-font);
+    font-weight: 600;
+    line-height: 68px;
+}
+
+.join_form {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.join_form input {
+    width: 100%;
+    padding: 16px 30px;
+    outline: none;
+}
+
+.join_form .btnn {
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 16px 60px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
 
 
 
@@ -348,6 +395,29 @@ figure img {
     .plants_lover_text ul {
         font-size: 1rem;
         padding-left: 35px;
+    }
+
+    /* ___________Join Section__________ */
+    .join_section {
+        margin: 30px 0 50px;
+    }
+
+    .section_content {
+        padding: 120px 36px;
+    }
+
+    .section_content h2 {
+        font-size: 1.4rem;
+        line-height: 5px;
+        margin-bottom: 30px;
+    }
+
+    .join_form .btnn {
+        padding: 13px 20px;
+    }
+
+    .join_form input {
+        padding: 12px 30px;
     }
 
 }
