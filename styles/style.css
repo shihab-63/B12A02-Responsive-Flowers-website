@@ -217,6 +217,7 @@ figure img {
   position: absolute;
   top: -128px;
   right: -100px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 10px 50px);
   animation: spin 15s linear infinite;
 }
 
